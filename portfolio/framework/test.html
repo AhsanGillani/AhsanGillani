@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.1.0.min.js">
+ 
+
+
+</script>
+	<link rel="stylesheet" type="text/css" href= "css/main.css" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body >
+<script>
+       window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 50) {
+        $('.top-bar').addClass('fixed');
+    } else {
+        $('.top-bar').removeClass('fixed');
+    }
+});
+</script>
+<div >
+<div   >
+	<div  >
+	<div class="top-bar" >
+		<div class="top-bar-inner"  style="position:fixed;width:100%;background-color:white;height:7%">
+			<div style="display:inline"><h2 style="display:inline" class="logo-text">AHSAN GILLANI</h2></div>
+			<div class="col-7" style="margin-right:10%;display:inline-block">
+			<ul >
+			<li data-slide="1" style="width:120px"><button type="button" onclick="smoothScroll(document.getElementById('slide-1'))">Contact</button></li>
+			 
+			<li data-slide="3" style="width:120px;"><button type="button" onclick="smoothScroll(document.getElementById('slide-3'))">Services</button></li>
+			 <li data-slide="2" style="width:120px;"><button type="button" onclick="smoothScroll(document.getElementById('slide-2'))">Blog</button></li>
+			 <li data-slide="4" style="width:120px;"><button type="button" onclick="smoothScroll(document.getElementById('slide-4'))">About</button></li>
+			 <li data-slide="5" style="width:120px;display:inline"><button type="button" onclick="smoothScroll(document.getElementById('slide-5'))">Work</button></li>	
+			 
+	</ul>
+	</div>
+		</div>	
+	</div>
+	</div>
+    </div>
+	</div>
+	<div ><img style="height:100%;width:100%" src="images/sliderImage.jpg"/></div>
+	
+	<div style="background-image:url(images/contactBackground.jpg);background-size:100%;postion:fixed">
+	<div class="slide-contact"  id="slide-1"  >
+		<div class="row">
+		<div><p class="contactHeading"style="margin-top:5%">Get in Touch</p> <p style="color:white;font-size:20px;">I am always available to chat and eager to help so lets talk</p></div>
+                <form id="contact-from" method="POST">
+				<p style="display:inline">
+					<label for="id_name" style="color:white;font-size:20px">NAME: <span class="required">*</span></label>
+					<span class="col-6"><input type="email" name="email" id="id_email"></span>
+				</p>
+				<p style="display:inline">
+					<label for="id_name" style="color:white;font-size:20px">EMAIL: <span class="required">*</span></label>
+					<span class="col-6"><input type="email" name="email" id="id_email"></span>
+				</p>
+				
+					
+						
+						<div style="margin-left:15%" >
+							<p style="font-size:20px;color:white;margin-right:0px;float:left;vertical-align:top;margin-left:18%;padding-top:1%"> MESSAGE:<span class="required">*</span></p>
+							<span ><input type="text-area" rows="10" cols="5" style="width:37%;height:100px;margin-top:3%;margin-left:0px;margin-right:33%"></span>
+						</div>
+						
+						
+                   
+                        
+                    
+                </form>
+				</div>
+				<div class="row" style="margin-top:5%">
+				<script>
+					function bigImg(element){
+					     element.style.transform="rotateX(360deg)";
+						 element.style.transform="rotateY(360deg)";
+						 element.style.transform="rotateZ(360deg)";
+						 element.style.transition="transform 1s";
+						 
+						 
+						 
+						 
+					}
+					function normalImg(element){
+					element.style.transform="rotateX(0deg)";
+						 element.style.transform="rotateY(0deg)";
+						 element.style.transform="rotateZ(0deg)";
+					     element.style.transform="transform 1.0s";
+						 element.style.height="19%";
+					}
+				</script>
+				<a class="imageButtons" href="http://www.upwork.com/o/profiles/users/_~01a568e55bc7d66375/"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="sites-link-image" src="images/upwork.png" style="width:19%;height:19%;"></a>
+				<a class="imageButtons" href="https://www.facebook.com/ahsanali302"><img  src="images/facebook.jpg" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="sites-link-image" style="width:19%;height:19%"></a>
+				<a class="imageButtons" href="https://pk.linkedin.com/in/ahsan-ali-4254009b"><img   src="images/fiverr.png" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="sites-link-image" style="width:19%;height:19%"></a>
+				<a class="imageButtons" href="https://pk.linkedin.com/in/ahsan-ali-4254009b"><img   src="images/linkedin.png" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="sites-link-image" style="width:19%;height:19%"></a>
+				<a class="imageButtons" href="https://pk.linkedin.com/in/ahsan-ali-4254009b"><img   src="images/freelancer.jpg" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="sites-link-image" style="width:19%;height:19%"><a>
+				
+				</div>
+            </div>
+	</div>
+	</div>
+	<div style="background-image:url(images/bg-services.jpg);background-size:100%"class="slide" name="slide-2" id="slide-2" >
+	<h1 class="row services">Services</h2>
+	<div class="services-list row">
+		<div style="display:inline"><img src="images/technologyIcons/webApps.png" style="width:20%;height:30%"> </img></div>
+		<div style="display:inline"><img src="images/technologyIcons/mobileApps.png" style="width:20%;height:30%"> </img></div>
+		<div style="display:inline"><img src="images/technologyIcons/mobileApps.png" style="width:20%;height:30%"> </img></div>
+		<div style="display:inline"><img src="technology-icons/web-apps.png" style="width:20%;height:30%"> </img></div>
+		<div style="display:inline"><img src="technology-icons/web-apps.png" style="width:20%;height:30%"> </img></div>
+		</div>
+	</div>
+	<div class="slide" name="slide-3" id="slide-3">
+	
+	</div>
+	
+	<div class="slide" name="slide-4"  >
+	
+	</div>
+	<div class="slide" name="slide-5"  >
+	<p>hdisaoooooooooooooooaiiaisai<b/>
+	asnnnnnnnnnnnnnnnnnnnn<b/>
+	siajjjjjjjjjhiaso<b/>
+	asuuhooooooooohoisdddd<b/>
+	ihddddddddddddddddddddddddddddddd\<b/>
+	iodoHIIIIIIIIIIIII<b/>
+	HIDOOOOOOOOOOOOOO<b/>
+	IDOOOOOOOOOOOOO</p>
+	</div>
+</body>
+</html>

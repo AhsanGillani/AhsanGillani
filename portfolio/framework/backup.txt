@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.1.0.min.js">
+ $("#slide-contact").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#slide1").offset().top},
+        'slow');
+});
+
+
+
+</script>
+	<link rel="stylesheet" type="text/css" href= "css/main.css" />
+</head>
+<body >
+<div >
+<div  >
+	<div class="row " >
+	<div class="top-bar" >
+		<div class="top-bar-inner">
+			<div style="display:inline"><h2 class="logo-text">AHSAN GILLANI</h2></div>
+			<div style="margin-right:10%;display:inline-block">
+			<ul>
+			<li data-slide="1" style="width:120px;"><a  href="#slide-1">Contact</a></li>
+			 <li data-slide="2" style="width:120px;"><a href="#slide-2">Blog</a></li>
+			 <li data-slide="3" style="width:120px;"><a href="#slide-3">Services</a></li>
+			 <li data-slide="4" style="width:120px;"><a href="#slide-4">About</a></li>
+			 <li data-slide="5" style="width:120px;"><a href="#slide-5">Work</a></li>
+			 
+			
+	</ul>
+	</div>
+		</div>	
+	</div>
+	</div>
+	
+    </div>
+	
+	
+	
+	<div ><img style="height:100%;width:100%" src="images/sliderImage.jpg"/></div>
+	</div >
+	<div style="background-image:url(images/contactBackground.jpg)">
+	<div class="slide-contact"  id="slide1" data-slide="1" >
+		<div class="row">
+		<div><p class="contactHeading">Get in Touch</p> <p style="color:white;font-size:20px">I am always available to chat and eager to help so lets talk</p></div>
+                <form id="contact-from" method="POST">
+				<p style="display:inline">
+					<label for="id_name" style="color:white;font-size:20px">NAME: <span class="required">*</span></label>
+					<span class="col-6"><input type="email" name="email" id="id_email"></span>
+				</p>
+				<p style="display:inline">
+					<label for="id_name" style="color:white;font-size:20px">EMAIL: <span class="required">*</span></label>
+					<span class="col-6"><input type="email" name="email" id="id_email"></span>
+				</p>
+				
+					
+						
+						<div style="margin-left:15%" >
+							<p style="font-size:20px;color:white;margin-right:0px;float:left;vertical-align:top;margin-left:18%;padding-top:1%"> MESSAGE:<span class="required">*</span></p>
+							<span ><input type="text-area" rows="10" cols="5" style="width:37%;height:100px;margin-top:3%;margin-left:0px;margin-right:33%"></span>
+						</div>
+						
+						
+                   
+                        
+                    
+                </form>
+				</div>
+				<div class="row" style="margin-top:5%">
+				<script>
+					function bigImg(element){
+					     element.style.transform="rotateX(360deg)";
+						 element.style.transform="rotateY(360deg)";
+						 element.style.transform="rotateZ(360deg)";
+						 element.style.transition="transform 4s";
+						 
+						 
+						 
+						 
+					}
+					function normalImg(element){
+					element.style.transform="rotateX(0deg)";
+						 element.style.transform="rotateY(0deg)";
+						 element.style.transform="rotateZ(0deg)";
+					     element.style.transform="transform 4s";
+						 element.style.height="19%";
+					}
+				</script>
+				<a class="imageButtons" href="http://www.upwork.com/o/profiles/users/_~01a568e55bc7d66375/"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="sites-link-image" src="images/upwork.png" style="width:19%;height:19%;"></a>
+				<a class="imageButtons" href="https://www.facebook.com/ahsanali302"><img  src="images/facebook.jpg" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="sites-link-image" style="width:19%;height:19%"></a>
+				<a class="imageButtons" href="https://pk.linkedin.com/in/ahsan-ali-4254009b"><img   src="images/fiverr.png" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="sites-link-image" style="width:19%;height:19%"></a>
+				<a class="imageButtons" href="https://pk.linkedin.com/in/ahsan-ali-4254009b"><img   src="images/linkedin.png" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="sites-link-image" style="width:19%;height:19%"></a>
+				<a class="imageButtons" href="https://pk.linkedin.com/in/ahsan-ali-4254009b"><img   src="images/freelancer.jpg" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="sites-link-image" style="width:19%;height:19%"><a>
+				
+				</div>
+            </div>
+	</div>
+	</div>
+	<div class="slide" name="slide-2" id="slide-2" data-slide="2">
+	<p>hdisaoooooooooooooooaiiaisai
+	asnnnnnnnnnnnnnnnnnnnn
+	siajjjjjjjjjhiaso
+	asuuhooooooooohoisdddd
+	ihddddddddddddddddddddddddddddddd\
+	iodoHIIIIIIIIIIIII
+	HIDOOOOOOOOOOOOOO
+	IDOOOOOOOOOOOOO</p>
+	</div>
+	<div class="slide" name="slide-3" data-slide="3">
+	<p>hdisaoooooooooooooooaiiaisai<b/>
+	asnnnnnnnnnnnnnnnnnnnn<b/>
+	siajjjjjjjjjhiaso<b/>
+	asuuhooooooooohoisdddd<b/>
+	ihddddddddddddddddddddddddddddddd\<b/>
+	iodoHIIIIIIIIIIIII<b/>
+	HIDOOOOOOOOOOOOOO<b/>
+	IDOOOOOOOOOOOOO</p>
+	</div>
+	<div class="slide" name="slide-4"  data-slide="4">
+	<p>hdisaoooooooooooooooaiiaisai<b/>
+	asnnnnnnnnnnnnnnnnnnnn<b/>
+	siajjjjjjjjjhiaso<b/>
+	asuuhooooooooohoisdddd<b/>
+	ihddddddddddddddddddddddddddddddd\<b/>
+	iodoHIIIIIIIIIIIII<b/>
+	HIDOOOOOOOOOOOOOO<b/>
+	IDOOOOOOOOOOOOO</p>
+	</div>
+	<div class="slide" name="slide-5"  data-slide="5">
+	<p>hdisaoooooooooooooooaiiaisai<b/>
+	asnnnnnnnnnnnnnnnnnnnn<b/>
+	siajjjjjjjjjhiaso<b/>
+	asuuhooooooooohoisdddd<b/>
+	ihddddddddddddddddddddddddddddddd\<b/>
+	iodoHIIIIIIIIIIIII<b/>
+	HIDOOOOOOOOOOOOOO<b/>
+	IDOOOOOOOOOOOOO</p>
+	</div>
+</body>
+</html>

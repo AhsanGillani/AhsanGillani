@@ -1,0 +1,130 @@
+
+.col-1{
+	width:8.33%;
+}
+.col-2{
+	width:16.66%;
+}
+.col-3{
+	width:25%;
+}
+.col-4{
+	width:33.33%;
+}
+.col-5{
+	width:42.5%;
+}
+.col-6{
+	width:50.0%;
+}
+.col-7{
+	width:58.33%;
+}
+.col-8{
+	width:67.66%;
+}
+.col-9{
+	width:74.0%;
+}
+.col-10{
+	width:82.33%;
+}
+.col-11{
+	width:91.66%;
+}
+.col-12{
+	width:100%;
+}
+.row{
+	width:100%;
+	text-align:center;
+}
+.top-bar-outer{
+	
+}
+.top-bar{
+	
+}
+.top-bar-inner{
+	
+}
+/* Chrome, Safari, Opera */
+
+a.imageButtons{
+	opacity:1.0;
+	
+}
+
+
+
+
+/* Standard syntax */
+
+
+
+
+.logo-text{
+	color:#FFA07A;
+	margin-left:7%;
+	display:inline-block;
+	
+}
+ul {
+    list-style-type: none;
+    margin-right: 20%;
+	
+    padding:0;
+    overflow: hidden;
+    background-color:white;
+	display:inline;
+	
+}
+
+li {
+    float: right;
+	
+}
+.contactHeading{
+	font-size:70px;
+	color:white;
+}
+.contact{
+	background-image:url("images/contact-background.jpg");
+}
+.required{
+	color:red;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: right;
+    text-decoration: none;
+	font-size:20px;
+	
+}
+li button{
+	border:none;
+	background-color: Transparent;
+	display: block;
+    color: black;
+    text-align: right;
+    text-decoration: none;
+	font-size:20px;
+}
+
+li button:hover {
+    font-weight:bold;
+}
+.services{
+	font-size:70px;
+	color:white;
+	padding-top:5%;
+}
+.slide-1 {
+    background-position: left center,right center;
+    background-repeat: no-repeat;
+    padding-bottom: 65px;
+    padding-top: 50px;
+    text-align: center;
+}
